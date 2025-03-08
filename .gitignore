@@ -1,0 +1,23 @@
+# GHDL generated files
+*.cf
+*.o
+*.vcd
+*.ghw
+
+# Backup and temporary files
+*~
+*.bak
+*.tmp
+
+# Editor and IDE specific files
+.vscode/
+.idea/
+*.swp
+
+# Build and log files
+*.log
+*.out
+
+# Other generated files
+*.bin
+*.hex
