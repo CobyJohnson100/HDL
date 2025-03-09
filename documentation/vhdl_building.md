@@ -40,8 +40,17 @@ This guide provides a detailed, practical approach to building VHDL projects, ta
 By following this guide, senior engineers can efficiently manage and execute VHDL projects, ensuring high-quality and reliable digital designs.
 
 ### Entity and Architecture
+Define for each module
+Entities (interface): 
+    - define inputs and outputs (external interface)
+    - define how components communicate with eachother
+    - reusable component that can be instantiated multiple times
+Port clause in entity declaration
 
-Define entities and architectures for each module, ensuring clear separation of interface and implementation.
+Architectures (implementation): 
+    - specifies how module behaves or internally structured
+    - construct that describes internal implementation of design module
+    - `begin` marks start of architecture
 
 ```vhdl
 -- Example of a simple VHDL entity and architecture
@@ -56,6 +65,8 @@ begin
     Y <= A and B;
 end Behavioral;
 ```
+`<=` is signal assessment operator used to assign value to signal
+`:=` is variable assignment operator used for temporary storage and calculations
 
 ### Testbenches
 
